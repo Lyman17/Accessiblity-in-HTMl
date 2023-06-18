@@ -74,6 +74,9 @@ main {
     display: inline-block;
     margin-left: 20px;
 }
+/* Main above is the Parent with base structure, 
+the following below is for each nested child 
+section img & H3 within its Parent Main*/
 
 main > section {
     margin-bottom: 20px;
@@ -100,6 +103,11 @@ main h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
+/* benefits(parent) & benefit(child)
+ Benefit is the child to its parent benefits.
+ and the following is the differentiaterd structures 
+ of each items/sections, 
+ I.E.  h3 & img*/
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
@@ -113,13 +121,16 @@ main h2 {
     margin: 10px auto;
     max-width: 150px;
 }
+
+/* the benefits section needs to follow the main section 
+in order for the CSS to read 
+in the same semantic order as its Index HTML code*/
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
 .footer h2 {
     font-size: 20px;
 }
